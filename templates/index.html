@@ -21,10 +21,12 @@
         <div class="card-body">
             <p class="text-muted">Upload a .csv or .xlsx file to instantly audit the dataset's health, statistics, and missing values.</p>
             
-            <form action="/" method="POST" enctype="multipart/form-data" class="d-flex align-items-center gap-3">
-                <input type="file" name="dataset" class="form-control w-50" accept=".csv, .xlsx, .xls, .pdf" required>
-                <button type="submit" class="btn btn-primary">Audit Dataset</button>
-            </form>
+           <!-- Upgraded form for Mobile Responsiveness and native File Picker -->
+<form action="/" method="POST" enctype="multipart/form-data" class="d-flex flex-column flex-md-row align-items-center gap-3 w-100">
+    <!-- Removed the strict 'accept' attribute so mobile phones open the 'Files' app -->
+    <input type="file" name="dataset" class="form-control w-100" required>
+    <button type="submit" class="btn btn-primary w-100">Audit Dataset</button>
+</form>
 
             {% if error_msg %}
                 <div class="alert alert-danger mt-3">{{ error_msg }}</div>
