@@ -1,0 +1,64 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Soft, premium gradient background */
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100vh;
+}
+
+/* Premium Card Styling */
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    background: linear-gradient(90deg, #0a74da, #007bff) !important;
+    border-bottom: none;
+    padding: 20px;
+}
+
+/* Upload Button Styling */
+.btn-primary {
+    background: linear-gradient(90deg, #007bff, #0a74da);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(90deg, #0a74da, #0056b3);
+}
+
+/* Custom styling for the Insights list */
+.list-group-item {
+    border-radius: 10px !important;
+    margin-bottom: 12px;
+    border: 1px solid #eaeaea;
+    border-left: 5px solid #0a74da;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    font-weight: 500;
+}
+
+/* Make the metric numbers pop */
+.text-primary, .text-danger {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
